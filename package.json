@@ -1,0 +1,25 @@
+{
+  "name": "hls-video-transcoder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"node dist/index\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@aws-sdk/client-ecs": "^3.840.0",
+    "@aws-sdk/client-sqs": "^3.840.0",
+    "@types/aws-lambda": "^8.10.150",
+    "aws-lambda": "^1.0.7",
+    "dotenv": "^17.0.1",
+    "tsc-watch": "^7.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "prettier": "^3.6.2"
+  }
+}
