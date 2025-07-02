@@ -19,17 +19,7 @@ This service is designed to be a scalable **video processing pipeline** for adap
 
 ## 🧱 Architecture
 
-```txt
-[S3 Upload]
-     ⬇️
-[SQS Queue ← S3 Event]
-     ⬇️
-[hls-transcoder-service (this app)]
-     ⬇️
-[ECS Fargate Task: FFmpeg Worker Container]
-     ⬇️
-[Output stored in S3 (HLS .m3u8 + .ts)]
-````
+![Architecture Diagram](./assets/hld-diagram.png)
 
 ---
 
